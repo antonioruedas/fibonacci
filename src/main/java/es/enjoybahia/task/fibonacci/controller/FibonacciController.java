@@ -23,7 +23,7 @@ public class FibonacciController {
 
     @ApiOperation(value = "Compute the fibonacci number of a given number.")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, response = Integer.class, message = "The request has been correctly computed."),
+            @ApiResponse(code = 200, response = Long.class, message = "The request has been correctly computed."),
             @ApiResponse(code = 400, message = "Bad request. An informative message is returned.")
     })
     @GetMapping(path="/{n}", produces = "application/json")
